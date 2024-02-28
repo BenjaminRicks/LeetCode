@@ -31,8 +31,8 @@ class Solution {
             winner = node.val;
         } 
 
-        findBottomLeftValue(node.left);
-        findBottomLeftValue(node.right);
+        helper(node.left);
+        helper(node.right);
 
         depth--;
     }
